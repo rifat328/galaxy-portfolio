@@ -2,6 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Github, Linkedin, Twitter, Facebook, Instagram, Code2 } from "lucide-react";
+import Hero3D from "@/components/sub/Hero3D";
 
 const slideInFromLeft = (delay) => {
     return {
@@ -33,46 +35,85 @@ const slideInFromRight = (delay) => {
 
 const Hero = () => {
     return (
-        <div className="relative flex flex-col h-full w-full justify-center items-center z-[20] pt-20">
-            <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-center md:text-start items-center md:items-start px-5 md:px-20">
+        <div className="relative flex flex-col md:flex-row h-screen w-full items-center justify-between z-[20] px-5 sm:px-10 lg:px-20 pt-20 overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-[#2A0E61]/20">
+
+            {/* 1. Social Media Sidebar (Left) - Pill Shaped */}
+            <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={slideInFromLeft(0.5)}
+                className="hidden md:flex flex-col gap-6 items-center z-30 mr-8 bg-slate-900/50 border border-indigo-500/30 px-4 py-8 rounded-full backdrop-blur-md shadow-lg shadow-indigo-500/20"
+            >
+                <a href="https://github.com/rifat328" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-rose-400 cursor-pointer transition transform hover:scale-125">
+                    <Github size={24} />
+                </a>
+                <a href="https://www.linkedin.com/in/rifat-hossain-a30b691ba/" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-rose-400 cursor-pointer transition transform hover:scale-125">
+                    <Linkedin size={24} />
+                </a>
+                <a href="https://x.com/RifatHo16260122" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-rose-400 cursor-pointer transition transform hover:scale-125">
+                    <Twitter size={24} />
+                </a>
+                <a href="https://leetcode.com/u/rifathossain328663/" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-rose-400 cursor-pointer transition transform hover:scale-125">
+                    <Code2 size={24} />
+                </a>
+                <a href="https://www.facebook.com/rjey.rifat/" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-rose-400 cursor-pointer transition transform hover:scale-125">
+                    <Facebook size={24} />
+                </a>
+                <a href="https://www.instagram.com/rjeyrifat/" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-rose-400 cursor-pointer transition transform hover:scale-125">
+                    <Instagram size={24} />
+                </a>
+            </motion.div>
+
+
+            {/* 2. Text Content (Center-Right) */}
+            <div className="flex-1 flex flex-col gap-5 justify-center text-center md:text-start z-30 max-w-2xl">
                 <motion.div
                     initial="hidden"
                     animate="visible"
-                    className="flex flex-col gap-6 mt-6 text-4xl md:text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+                    className="flex flex-col gap-2"
                 >
-                    <motion.span variants={slideInFromLeft(0.5)}>
-                        Providing
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"> the best </span>
-                        project experience
-                    </motion.span>
+                    <motion.h1 variants={slideInFromLeft(0.5)} className="text-5xl md:text-7xl font-bold text-white tracking-wider drop-shadow-lg">
+                        Rifat
+                    </motion.h1>
+                    <motion.h2 variants={slideInFromLeft(0.6)} className="text-3xl md:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-rose-400 to-amber-400 animate-gradient-x">
+                        Architect of Digital Universes
+                    </motion.h2>
                 </motion.div>
 
                 <motion.p
                     variants={slideInFromLeft(0.8)}
                     initial="hidden"
                     animate="visible"
-                    className="text-lg text-gray-400 my-5 max-w-[600px]"
+                    className="text-lg text-slate-300 my-5 max-w-[600px] leading-relaxed"
                 >
-                    I&apos;m a Full Stack Software Engineer with experience in Website,
-                    Mobile, and Software development. Check out my projects and skills.
+                    I design and build immersive digital experiences. As a Full Stack Engineer, I merge technical precision with creative vision to solve complex problems.
                 </motion.p>
 
-                <div className="flex flex-row gap-5">
-                    <motion.a
-                        variants={slideInFromLeft(1)}
-                        initial="hidden"
-                        animate="visible"
-                        className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-                    >
-                        Learn More!
-                    </motion.a>
-                </div>
+                <motion.div
+                    variants={slideInFromLeft(1)}
+                    initial="hidden"
+                    animate="visible"
+                    className="flex flex-col md:flex-row gap-4 justify-center md:justify-start"
+                >
+                    <a href="#projects" className="py-3 px-8 bg-gradient-to-r from-indigo-600 to-rose-600 text-center text-white cursor-pointer rounded-full text-lg font-bold hover:shadow-[0_0_30px_rgba(225,29,72,0.6)] transition duration-300">
+                        View Projects
+                    </a>
+                    <a href="#contact" className="py-3 px-8 border border-indigo-500/50 bg-slate-900/50 text-center text-white cursor-pointer rounded-full text-lg hover:bg-indigo-500/10 transition duration-300">
+                        Contact Me
+                    </a>
+                </motion.div>
             </div>
 
-            <div className="w-full h-full flex justify-center items-center">
-                {/* Placeholder for a Blackhole or Hero Image */}
-                <div className="w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-3xl absolute -z-10" />
-            </div>
+            {/* 3. 3D Model / Interactive Area (Far Right) */}
+            <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={slideInFromRight(0.8)}
+                className="w-full md:w-[600px] h-[600px] flex items-center justify-center relative z-20"
+            >
+                <Hero3D />
+            </motion.div>
+
         </div>
     );
 };
