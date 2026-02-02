@@ -76,7 +76,18 @@ secure data flow and separation of privileges.
 
 - GitHub : https://github.com/rifat328/assembly-endgame
 
-  
+## Subscription Service
+  - This Backend Project Track all of Users Subscriptions and send email notification before expire date so you can cancel it and save money if you don't want it.
+  -  GitHub: https://github.com/rifat328/subscription-service
+## Your Personal Drum-Kit
+Welcome to  **Your Personal Drum-Kit**, a fun and interactive web-based app that lets you unleash your inner drummer! 🎶
+
+With just a tap of your keyboard or a click of your mouse, you can play realistic drum sounds. The keys  **W, A, S, D, J, K, L**  are your instruments, or you can click on the drum elements to create your own beats. It's all built using the power of  **HTML**,  **CSS**, and  **JavaScript**  with some cool DOM manipulation magic.
+-  GitHub: https://github.com/rifat328/Your-Personal-Drum-Kit-
+
+## Project-Infinity
+This is a python project that keeps track of University Coerces . I built this as my test python project . Course data were gathered from AIUB portal using pandas dataframe. Also crud file operation can be performed. Its a console based application.
+-  GitHub: https://github.com/rifat328/Project-Infinity-
 
 ##  Google Sheets Sales Analysis & Refund
 
@@ -98,8 +109,49 @@ secure data flow and separation of privileges.
 
 - GitHub : https://shorturl.at/eRsLF
 
-  
 
+## "nickelfox.com"
+-This is a responsive e-commerce homepage built with **React** using the **Vite** bundler. It demonstrates modern frontend development practices with clean UI design, layout components, and responsive behavior across devices.
+- GitHub : https://github.com/rifat328/nickelfox.com
+
+## Space exploration website
+ - Space Exploration Landing page, Part of the Frontend Mastery Challenge. This Whole landing page was made entirely using vanilla **JavaScript**,**HTML**,**CSS**.
+ - Used CSS Design System to ease maintainability 
+- GitHub : https://github.com/rifat328/space-exploration-website
+## Tenzis-game-react
+- Rules: when every dice has the same number as your held number then you win the game . you have to held the same number as much as possible then re-roll the dice untill you held all the same numbered dice.
+- GitHub: https://github.com/rifat328/tenzis-game-react
+### Tech Stack
+-   Html
+-   CSS
+-   JavaScript
+-   React
+## Anomaly Detection on Streamed Data
+Welcome to the **Efficient Data Stream Anomaly Detection** project! This repository provides a framework for detecting anomalies in real-time data streams using the Z-score method. It includes data simulation, anomaly detection, and real-time visualization.
+1.  **Continuous Data Stream Simulation**: A function generates synthetic data with seasonal variation, noise, and rare anomalies.
+2.  **Z-Score Anomaly Detection**: Efficiently detects outliers based on the Z-score formula.
+3.  **Real-time Visualization**: Continuously updates a plot to visualize the data stream and mark detected anomalies.
+4.  **Interactive Plot**: Red markers indicate anomalies in the live-updating plot for easy identification.
+5.  **Robust Error Handling and Data Validation**: Ensures that the data points are valid and checks for potential issues in processing. This keeps the algorithm stable and avoids crashes in production environments.
+- GitHub: https://github.com/rifat328/Anomaly-Detection-on-Streamed-Data
+
+## Dice-Game
+A simple dice game where the player with the higher roll wins! Refresh the browser to play again. Features Randomness included 🎲 DOM manipulation Uses arrays and objects Fun and easy gameplay
+### Features
+-   Randomness included 🎲
+-   DOM manipulation
+-   Uses arrays and objects
+-   Fun and easy gameplay
+
+### How to Play
+-   Click on the button to roll the dice.
+-   The player with the higher dice roll wins!
+
+### Technologies Used
+-   HTML
+-   CSS
+-   JavaScript.
+- 
 #  EDUCATION
 **BSc Computer Science & Engineering**
 **2020-2023**
