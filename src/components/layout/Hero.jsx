@@ -35,7 +35,7 @@ const slideInFromRight = (delay) => {
 
 const Hero = () => {
     return (
-        <div className="relative flex flex-col md:flex-row h-screen w-full items-center justify-between z-[20] px-5 sm:px-10 lg:px-20 pt-20 overflow-hidden bg-gradient-to-b from-slate-850 via-slate-900 to-[#2A0E61]/20">
+        <div className="relative flex flex-col md:flex-row h-screen w-full items-center justify-between z-[20]  sm:px-5 lg:px-20 overflow-hidden bg-gradient-to-b from-slate-850 via-slate-900 to-[#2A0E61]/20">
 
             {/* 1. Social Media Sidebar (Left) - Pill Shaped */}
             <motion.div
@@ -66,7 +66,7 @@ const Hero = () => {
 
 
             {/* 2. Text Content (Center-Right) */}
-            <div className="flex-1 flex flex-col gap-5 justify-center text-center md:text-start z-30 max-w-2xl">
+            <div className="flex-1 flex flex-col gap-2 justify-center text-center md:text-start z-30 max-w-2xl">
                 <motion.div
                     initial="hidden"
                     animate="visible"
@@ -74,12 +74,12 @@ const Hero = () => {
                 >
                     <motion.h1
                         variants={slideInFromLeft(0.5)}
-                        className="text-5xl md:text-7xl font-bold tracking-wider drop-shadow-lg text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-500"
+                        className="text-4xl md:text-5xl font-bold tracking-wider drop-shadow-lg text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-500"
                     >
                         Rifat Hossain
                     </motion.h1>
-                    <motion.h2 variants={slideInFromLeft(0.6)} className="text-3xl md:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-rose-400 to-amber-400 animate-gradient-x">
-                        Software Engineer | Full-Stack Developer
+                    <motion.h2 variants={slideInFromLeft(0.6)} className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-rose-400 to-amber-400 animate-gradient-x">
+                        Software Engineer
                     </motion.h2>
                 </motion.div>
 
@@ -87,7 +87,7 @@ const Hero = () => {
                     variants={slideInFromLeft(0.8)}
                     initial="hidden"
                     animate="visible"
-                    className="text-lg text-slate-300 my-5 max-w-[600px] leading-relaxed"
+                    className="text-sm md:text-lg text-slate-300 my-5 max-w-[600px] leading-relaxed"
                 >
                     I design and build immersive digital experiences. As a Full Stack Engineer, I merge technical precision with creative vision to solve complex problems.
                 </motion.p>
@@ -98,10 +98,10 @@ const Hero = () => {
                     animate="visible"
                     className="flex flex-col md:flex-row gap-4 justify-center md:justify-start"
                 >
-                    <a href="#projects" className="py-3 px-8 bg-gradient-to-r from-indigo-600 to-rose-600 text-center text-white cursor-pointer rounded-full text-lg font-bold hover:shadow-[0_0_30px_rgba(225,29,72,0.6)] transition duration-300">
+                    <a href="#projects" className="py-1 md:py-2 px-5 bg-gradient-to-r from-indigo-600 to-rose-600 text-center text-white cursor-pointer rounded-full text-sm md:text-lg font-bold hover:shadow-[0_0_30px_rgba(225,29,72,0.6)] transition duration-300">
                         View Projects
                     </a>
-                    <a href="#contact" className="py-3 px-8 border border-indigo-500/50 bg-slate-900/50 text-center text-white cursor-pointer rounded-full text-lg hover:bg-indigo-500/10 transition duration-300">
+                    <a href="#contact" className="py-2 md:py-3 px-8 border border-indigo-500/50 bg-slate-900/50 text-center text-white cursor-pointer rounded-full text-sm md:text-lg hover:bg-indigo-500/10 transition duration-300">
                         Contact Me
                     </a>
                 </motion.div>
