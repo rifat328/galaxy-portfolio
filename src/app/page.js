@@ -11,13 +11,27 @@ export default function Home() {
   return (
     <main className="h-full w-full">
       <div className="flex flex-col">
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
-        <Footer />
+        <section className="snap-start w-full">
+          <Hero />
+        </section>
+        <section className="snap-start w-full">
+          <About />
+        </section>
+        <section className="snap-start w-full">
+          <Skills />
+        </section>
+        <section className="snap-start w-full">
+          <Experience />
+        </section>
+        <section className="snap-start w-full">
+          <Projects />
+        </section>
+        <section className="snap-start w-full">
+          <Contact />
+        </section>
+        <section className="snap-start w-full">
+          <Footer />
+        </section>
         <ScrollToTop />
       </div>
     </main>

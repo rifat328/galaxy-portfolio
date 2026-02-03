@@ -6,8 +6,8 @@ import { Code, Database, Globe, Layers, Cpu } from "lucide-react";
 const Skills = () => {
     // Subset for Current Stack (first 5 for example)
     const currentStack = Skill_data.slice(0, 5);
-    // All skills repeated for marquee smoothness
-    const allSkills = [...Skill_data, ...Skill_data];
+    // All skills for marquee
+    const allSkills = Skill_data;
 
     return (
         <section

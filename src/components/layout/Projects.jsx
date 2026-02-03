@@ -65,10 +65,17 @@ const Projects = () => {
 
     return (
         <section ref={targetRef} className="relative h-[300vh] bg-transparent" id="projects">
+            {/* Ghost Snap Points for smooth mandatory scrolling through the animation */}
+            <div className="absolute inset-0 w-full h-full pointer-events-none">
+                <div className="w-full h-screen snap-start" />
+                <div className="w-full h-screen snap-start" />
+                <div className="w-full h-screen snap-start" />
+            </div>
+
             <div className="sticky top-0 flex h-screen items-center overflow-hidden">
 
                 {/* Title Overlay */}
-                <div className="absolute top-10 left-10 md:left-20 z-10 w-full">
+                <div className="absolute top-24 left-10 md:left-20 z-10 w-full">
                     <h1 className="text-[40px] md:text-[60px] font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500">
                         Selected Works
                     </h1>
