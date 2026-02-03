@@ -69,7 +69,7 @@ const Projects = () => {
 
                 {/* Title Overlay */}
                 <div className="absolute top-10 left-10 md:left-20 z-10 w-full">
-                    <h1 className="text-[40px] md:text-[60px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+                    <h1 className="text-[40px] md:text-[60px] font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500">
                         Selected Works
                     </h1>
                 </div>

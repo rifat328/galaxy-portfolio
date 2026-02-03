@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <section id="contact" className="py-20 px-5 relative z-20 overflow-hidden bg-slate-950">
             {/* Gradient Title */}
-            <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-rose-500 py-10 text-center">
+            <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-linear-to-r from-indigo-500 via-purple-500 to-rose-500 py-10 text-center">
                 Get In Touch
             </h1>
 
@@ -30,7 +30,7 @@ const Contact = () => {
                             <label className="text-slate-300 text-sm font-medium">Message</label>
                             <textarea rows="5" placeholder="Your Message..." className="bg-[#1e293b] border border-slate-700 rounded-lg p-3 text-white focus:outline-none focus:border-rose-400 focus:ring-1 focus:ring-rose-400 transition resize-none"></textarea>
                         </div>
-                        <button type="submit" className="bg-gradient-to-r from-indigo-600 to-rose-600 hover:from-indigo-500 hover:to-rose-500 py-3 px-6 rounded-lg text-white font-bold flex items-center justify-center gap-2 hover:scale-[1.02] transition shadow-lg shadow-rose-500/20">
+                        <button type="submit" className="bg-linear-to-r from-indigo-600 to-rose-600 hover:from-indigo-500 hover:to-rose-500 py-3 px-6 rounded-lg text-white font-bold flex items-center justify-center gap-2 hover:scale-[1.02] transition shadow-lg shadow-rose-500/20">
                             <span>Send Message</span>
                             <Send size={18} />
                         </button>

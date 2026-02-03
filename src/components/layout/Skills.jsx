@@ -15,15 +15,15 @@ const Skills = () => {
             className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-20 py-20 z-20"
         >
             {/* Background elements */}
-            <div className="absolute w-full h-full z-[-10] opacity-30">
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black/80" />
+            <div className="absolute w-full h-full -z-10 opacity-30">
+                <div className="absolute top-0 left-0 w-full h-full bg-linear-to-b from-transparent to-black/80" />
             </div>
 
             {/* Current Stack */}
             <div className="flex flex-col items-center justify-center mb-10 mt-10 w-full px-5">
                 <div className="flex items-center gap-2 mb-6">
                     <Layers className="text-purple-500" />
-                    <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4 text-center">
+                    <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500 py-4 text-center">
                         Current Stack
                     </h1>
                 </div>

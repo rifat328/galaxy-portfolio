@@ -40,7 +40,7 @@ const AnimatedSphere = () => {
 const Hero3D = () => {
     return (
         <div className="w-full h-full absolute inset-0 z-[-1] md:z-10 md:relative">
-            <Canvas className="w-full h-full sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px]">
+            <Canvas className="w-full h-full sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] lg:w-[400px] lg:h-[400px] xl:w-[600px] xl:h-[600px]">
                 <ambientLight intensity={0.5} />
                 <directionalLight position={[2, 5, 2]} intensity={1} />
                 <AnimatedSphere />

@@ -64,7 +64,7 @@ const Footer = () => {
                 {/* 4. Credits (Right) */}
                 <div className="flex flex-col items-center md:items-end gap-2 text-center md:text-right">
                     <span className="text-sm text-slate-400 font-light">Designed & Developed by</span>
-                    <span className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-rose-500 font-orbitron">
+                    <span className="text-3xl font-bold bg-clip-text text-transparent bg-linear-to-r from-indigo-500 via-purple-500 to-rose-500 font-orbitron">
                         Rifat
                     </span>
 

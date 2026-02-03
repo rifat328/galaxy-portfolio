@@ -14,7 +14,7 @@ const ExperienceData = [
 const Experience = () => {
     return (
         <section id="experience" className="flex flex-col items-center justify-center gap-5 h-full relative overflow-hidden pb-20 py-20 z-20 px-5">
-            <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4 text-center">
+            <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500 py-4 text-center">
                 My Experience
             </h1>
 

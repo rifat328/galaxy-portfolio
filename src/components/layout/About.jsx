@@ -16,7 +16,7 @@ const About = () => {
                     viewport={{ once: true }}
                     className="w-full text-center"
                 >
-                    <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4">
+                    <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500 py-4">
                         About Me
                     </h1>
                     <p className="text-gray-300 text-lg sm:text-xl leading-relaxed max-w-3xl mx-auto">
