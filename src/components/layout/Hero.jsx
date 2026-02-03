@@ -35,7 +35,7 @@ const slideInFromRight = (delay) => {
 
 const Hero = () => {
     return (
-        <div className="relative flex flex-col md:flex-row h-screen w-full items-center justify-between z-[20] px-5 sm:px-10 lg:px-20 pt-20 overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-[#2A0E61]/20">
+        <div className="relative flex flex-col md:flex-row h-screen w-full items-center justify-between z-[20] px-5 sm:px-10 lg:px-20 pt-20 overflow-hidden bg-gradient-to-b from-slate-850 via-slate-900 to-[#2A0E61]/20">
 
             {/* 1. Social Media Sidebar (Left) - Pill Shaped */}
             <motion.div
@@ -72,11 +72,14 @@ const Hero = () => {
                     animate="visible"
                     className="flex flex-col gap-2"
                 >
-                    <motion.h1 variants={slideInFromLeft(0.5)} className="text-5xl md:text-7xl font-bold text-white tracking-wider drop-shadow-lg">
-                        Rifat
+                    <motion.h1
+                        variants={slideInFromLeft(0.5)}
+                        className="text-5xl md:text-7xl font-bold tracking-wider drop-shadow-lg text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-500"
+                    >
+                        Rifat Hossain
                     </motion.h1>
                     <motion.h2 variants={slideInFromLeft(0.6)} className="text-3xl md:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-rose-400 to-amber-400 animate-gradient-x">
-                        Architect of Digital Universes
+                        Software Engineer | Full-Stack Developer
                     </motion.h2>
                 </motion.div>
 
@@ -109,7 +112,7 @@ const Hero = () => {
                 initial="hidden"
                 animate="visible"
                 variants={slideInFromRight(0.8)}
-                className="w-full md:w-[600px] h-[600px] flex items-center justify-center relative z-20"
+                className="w-full sm:w-[400px] sm:h-[400px] md:w-[600px] h-[600px] flex items-center justify-center relative z-20"
             >
                 <Hero3D />
             </motion.div>
