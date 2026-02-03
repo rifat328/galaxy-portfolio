@@ -35,7 +35,7 @@ const slideInFromRight = (delay) => {
 
 const Hero = () => {
     return (
-        <div className="relative flex flex-col lg:flex-row h-screen w-full items-center justify-center lg:justify-between z-[20] px-3 lg:px-10 overflow-hidden bg-linear-to-b from-slate-850 via-slate-900 to-[#2A0E61]/20">
+        <div className="relative flex flex-col lg:flex-row h-screen w-full items-center justify-center lg:justify-between z-[20] px-3 lg:px-10 overflow-hidden ">
 
             {/* 1. Social Media Sidebar (Left) - Pill Shaped */}
             <motion.div
