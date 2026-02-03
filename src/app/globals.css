@@ -5,9 +5,7 @@
   --foreground: #ffffff;
 }
 
-html {
-  /* Scroll behavior handled by Lenis + Custom JS Snap */
-}
+
 
 body {
   background: var(--background);
