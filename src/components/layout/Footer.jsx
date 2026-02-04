@@ -1,38 +1,34 @@
 "use client";
 import React from "react";
 import { Mail, Phone, Github, Linkedin, Twitter, Code2, Facebook, Instagram } from "lucide-react";
-
+import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
     return (
-        <div className="w-full bg-slate-950 text-gray-200 border-t border-indigo-500/30 pt-10">
-            <div className="max-w-7xl mx-auto w-full h-full flex flex-col md:flex-row items-center md:items-start justify-between p-10 gap-10 md:gap-0">
+        <div className="w-full bg-slate-950 text-gray-200 border-t border-indigo-500/30 pt-10 relative z-30">
+            <div className="max-w-7xl mx-auto w-full h-full flex flex-col md:flex-row items-center md:items-start justify-between p-10 gap-10 md:gap-0 relative z-30">
 
-                {/* 1. Left: Vertical Social Logos */}
+                {/* 1. Left: Social Links */}
                 <div className="flex flex-col items-center md:items-start gap-4">
-                    <div className="font-bold text-[16px] mb-2 text-white">Socials</div>
-                    <div className="flex flex-wrap md:flex-col gap-4">
-                        <div className="flex gap-4">
-                            <a href="https://github.com/rifat328" target="_blank" rel="noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-rose-500 hover:text-white transition duration-300 shadow-lg hover:shadow-rose-500/25">
-                                <Github size={20} />
-                            </a>
-                            <a href="https://www.linkedin.com/in/rifat-hossain-a30b691ba/" target="_blank" rel="noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-rose-500 hover:text-white transition duration-300 shadow-lg hover:shadow-rose-500/25">
-                                <Linkedin size={20} />
-                            </a>
-                            <a href="https://x.com/RifatHo16260122" target="_blank" rel="noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-rose-500 hover:text-white transition duration-300 shadow-lg hover:shadow-rose-500/25">
-                                <Twitter size={20} />
-                            </a>
-                        </div>
-                        <div className="flex gap-4">
-                            <a href="https://leetcode.com/u/rifathossain328663/" target="_blank" rel="noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-rose-500 hover:text-white transition duration-300 shadow-lg hover:shadow-rose-500/25">
-                                <Code2 size={20} />
-                            </a>
-                            <a href="https://www.instagram.com/rjeyrifat/" target="_blank" rel="noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-rose-500 hover:text-white transition duration-300 shadow-lg hover:shadow-rose-500/25">
-                                <Instagram size={20} />
-                            </a>
-                            <a href="https://www.facebook.com/rjey.rifat/" target="_blank" rel="noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-rose-500 hover:text-white transition duration-300 shadow-lg hover:shadow-rose-500/25">
-                                <Facebook size={20} />
-                            </a>
-                        </div>
+                    <div className="font-bold text-[16px] text-white">Socials</div>
+                    <div className="grid grid-cols-3 gap-4">
+                        <a href="https://github.com/rifat328" target="_blank" rel="noopener noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-rose-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-rose-500/25 flex items-center justify-center">
+                            <Github size={20} />
+                        </a>
+                        <a href="https://www.linkedin.com/in/rifat-hossain-a30b691ba/" target="_blank" rel="noopener noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-rose-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-rose-500/25 flex items-center justify-center">
+                            <Linkedin size={20} />
+                        </a>
+                        <a href="https://x.com/RifatHo16260122" target="_blank" rel="noopener noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-rose-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-rose-500/25 flex items-center justify-center">
+                            <FaXTwitter size={20} />
+                        </a>
+                        <a href="https://leetcode.com/u/rifathossain328663/" target="_blank" rel="noopener noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-rose-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-rose-500/25 flex items-center justify-center">
+                            <Code2 size={20} />
+                        </a>
+                        <a href="https://www.instagram.com/rjeyrifat/" target="_blank" rel="noopener noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-rose-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-rose-500/25 flex items-center justify-center">
+                            <Instagram size={20} />
+                        </a>
+                        <a href="https://www.facebook.com/rjey.rifat/" target="_blank" rel="noopener noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-rose-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-rose-500/25 flex items-center justify-center">
+                            <Facebook size={20} />
+                        </a>
                     </div>
                 </div>
 
