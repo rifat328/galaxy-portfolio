@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 const Achievements = () => {
     return (
-        <div>
+        <section className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-20 py-20 z-20">
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ const Achievements = () => {
                     </div>
                 </div>
             </motion.div>
-        </div>
+        </section>
     )
 }
 

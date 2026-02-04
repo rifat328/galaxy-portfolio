@@ -15,7 +15,7 @@ export default function Home() {
         <section className="snap-start w-full">
           <Hero />
         </section>
-        <section className="snap-start w-full">
+        <section className="snap-start w-full ">
           <About />
         </section>
         <section className="snap-start w-full">

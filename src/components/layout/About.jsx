@@ -6,7 +6,7 @@ const About = () => {
     return (
         <section
             id="about"
-            className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-20 py-20 z-20"
+            className="flex flex-col items-center justify-center gap-3  h-full relative overflow-hidden pb-20 py-20 z-20"
         >
             <div className="flex flex-col justify-around flex-wrap items-center max-w-[900px] w-full px-5">
                 <motion.div
