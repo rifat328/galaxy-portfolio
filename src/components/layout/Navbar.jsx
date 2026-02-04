@@ -52,8 +52,8 @@ const Navbar = () => {
     const navLinks = [
         { name: "About", href: "#about", id: "about" },
         { name: "Skills", href: "#skills", id: "skills" },
-        { name: "Projects", href: "#projects", id: "projects" },
         { name: "Experience", href: "#experience", id: "experience" },
+        { name: "Projects", href: "#projects", id: "projects" },
         { name: "Contact", href: "#contact", id: "contact" },
     ];
 
@@ -61,8 +61,8 @@ const Navbar = () => {
         <div className="fixed top-0 w-full h-[65px] z-50 px-2 sm:px-4 md:px-10 mt-2 sm:mt-4 pointer-events-none">
             <div className="w-full h-full flex items-center justify-between relative">
                 {/* 1. Left: Logo / Brand */}
-                <a href="#about" className="flex flex-row items-center justify-center pointer-events-auto">
-                    <span className="font-bold text-base sm:text-lg md:text-xl bg-linear-to-b from-white to-gray-400 bg-clip-text text-transparent transition drop-shadow-lg">
+                <a href="#Hero" className="flex flex-row items-center justify-center pointer-events-auto">
+                    <span className="font-bold font-nico-moji text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl bg-linear-to-b from-white to-gray-400 bg-clip-text text-transparent transition drop-shadow-lg">
                         RH
                     </span>
                 </a>
@@ -106,8 +106,8 @@ const Navbar = () => {
                         <ExternalLink size={16} />
                     </a>
                     <a
-                        href="/publiccv.pdf"
-                        download
+                        href="/Rifat_resume2025.pdf"
+                        download="Rifat_resume2025.pdf"
                         className="flex flex-row items-center gap-1 sm:gap-2 bg-[#7042f861] border border-[#7042f861] text-gray-100 hover:bg-[#7042f88b] hover:border-purple-500/50 px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 rounded-full transition text-xs sm:text-sm font-bold shadow-md hover:shadow-purple-500/25"
                     >
                         <span className="hidden sm:inline">CV</span>

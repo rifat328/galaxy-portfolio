@@ -35,6 +35,7 @@ body {
 @theme {
   --animate-marquee: marquee 25s linear infinite;
   --animate-marquee2: marquee2 25s linear infinite;
+  --font-nico-moji: var(--font-nico-moji);
 
   @keyframes marquee {
     0% {
