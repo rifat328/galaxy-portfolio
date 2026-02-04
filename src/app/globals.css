@@ -35,6 +35,7 @@ body {
 @theme {
   --animate-marquee: marquee 25s linear infinite;
   --animate-marquee2: marquee2 25s linear infinite;
+  --animate-gradient-x: gradient-x 3s ease infinite;
   --font-nico-moji: var(--font-nico-moji);
 
   @keyframes marquee {
@@ -56,4 +57,36 @@ body {
       transform: translateX(0%);
     }
   }
+
+  @keyframes gradient-x {
+
+    0%,
+    100% {
+      background-size: 200% 200%;
+      background-position: left center;
+    }
+
+    50% {
+      background-size: 200% 200%;
+      background-position: right center;
+    }
+  }
+}
+
+/* Gradient animation for text - outside @theme for compatibility */
+@keyframes gradient-shift {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200% !important;
+  animation: gradient-shift 3s ease infinite;
 }

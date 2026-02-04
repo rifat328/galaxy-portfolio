@@ -78,7 +78,7 @@ const Hero = () => {
                     >
                         Rifat Hossain
                     </motion.h1>
-                    <motion.h2 variants={slideInFromLeft(0.6)} className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-linear-to-r from-indigo-400 via-rose-400 to-amber-400 animate-gradient-x">
+                    <motion.h2 variants={slideInFromLeft(0.6)} className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-linear-to-r from-indigo-400 via-rose-400 to-amber-400 ">
                         Software Engineer
                     </motion.h2>
                 </motion.div>
@@ -89,7 +89,7 @@ const Hero = () => {
                     animate="visible"
                     className="text-sm md:text-lg text-slate-300 my-5 max-w-[600px] leading-relaxed"
                 >
-                    I design and build immersive digital experiences. As a <span className="text-transparent font-bold bg-clip-text bg-linear-to-r from-indigo-400 via-rose-400 to-amber-400 animate-gradient-x">Full Stack Engineer</span>, I merge technical precision with creative vision to solve complex problems.
+                    I design and build immersive digital experiences. As a <span className="text-transparent font-bold bg-clip-text bg-linear-to-r from-indigo-400 via-rose-400 to-amber-400 animate-gradient-x" style={{ backgroundSize: '200% 200%' }}>Full Stack Engineer</span>, I merge technical precision with creative vision to solve complex problems.
                 </motion.p>
 
                 <motion.div
