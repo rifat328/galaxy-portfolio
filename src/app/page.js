@@ -2,6 +2,7 @@ import Hero from "@/components/layout/Hero";
 import About from "@/components/layout/About";
 import Skills from "@/components/layout/Skills";
 import Experience from "@/components/layout/Experience";
+import Achievements from "@/components/layout/Achievements";
 import Projects from "@/components/layout/Projects";
 import Footer from "@/components/layout/Footer";
 import Contact from "@/components/layout/Contact";
@@ -25,6 +26,9 @@ export default function Home() {
         </section>
         <section className="snap-start w-full">
           <Projects />
+        </section>
+        <section className="snap-start w-full">
+          <Achievements />
         </section>
         <section className="snap-start w-full">
           <Contact />

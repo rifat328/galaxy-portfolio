@@ -89,7 +89,7 @@ const Hero = () => {
                     animate="visible"
                     className="text-sm md:text-lg text-slate-300 my-5 max-w-[600px] leading-relaxed"
                 >
-                    I design and build immersive digital experiences. As a Full Stack Engineer, I merge technical precision with creative vision to solve complex problems.
+                    I design and build immersive digital experiences. As a <span className="text-transparent font-bold bg-clip-text bg-linear-to-r from-indigo-400 via-rose-400 to-amber-400 animate-gradient-x">Full Stack Engineer</span>, I merge technical precision with creative vision to solve complex problems.
                 </motion.p>
 
                 <motion.div
