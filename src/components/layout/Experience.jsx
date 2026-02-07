@@ -1,47 +1,107 @@
 "use client";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
-const ExperienceData = [
-    {
-        position: "Software Engineer Intern",
-        company: "Nerd Castle Limited",
-        year: "Jul 2023 - Sep 2023",
-        details: "Worked with ASP.NET Core and ASP.NET framework related technologies to enhance application functionality and user experiences."
-    }
-];
+const ExperienceData = {
+    software: [
+        {
+            position: "Software Engineer Intern",
+            company: "Nerd Castle Limited",
+            year: "Jul 2023 - Sep 2023",
+            details: "Worked with ASP.NET Core and ASP.NET framework related technologies to enhance application functionality and user experiences."
+        },
+        // Add more software items here
+    ],
+    business: [
+        {
+            position: "Business Development Lead",
+            company: "Tech Startups Inc.",
+            year: "Jan 2024 - Present",
+            details: "Managing client relations and identifying new market opportunities in the SaaS sector."
+        }
+    ]
+};
 
 const Experience = () => {
+    const [activeTab, setActiveTab] = useState("software");
+
+    const tabs = [
+        { id: "software", label: "Software" },
+        { id: "business", label: "Business" }
+    ];
+
     return (
         <section id="experience" className="flex flex-col items-center justify-center gap-5 h-full relative overflow-hidden pb-20 py-20 z-20 px-5">
-            <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500 py-4 text-center">
+            <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4 text-center">
                 My Experience
             </h1>
 
-            <div className="w-full max-w-4xl flex flex-col gap-8">
-                {ExperienceData.map((item, index) => (
-                    <motion.div
-                        key={index}
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.1, duration: 0.3 }}
-                        className="flex flex-col md:flex-row justify-between items-start md:items-center p-6 border border-[#7042f861] bg-[#0300145e] rounded-xl hover:border-purple-500/80 transition"
+            {/* Pill Shaped Switcher */}
+            <div className="flex items-center p-1 bg-[#0300145e] border border-[#7042f861] rounded-full mb-10 relative">
+                {tabs.map((tab) => (
+                    <button
+                        key={tab.id}
+                        onClick={() => setActiveTab(tab.id)}
+                        className={`relative z-10 px-8 py-2 text-sm font-medium transition-colors duration-300 w-32 ${activeTab === tab.id ? "text-white" : "text-gray-400 hover:text-gray-200"
+                            }`}
                     >
-                        <div className="flex flex-col gap-1">
-                            <h2 className="text-2xl font-bold text-white">{item.position}</h2>
-                            <h3 className="text-lg text-purple-300 font-medium">{item.company}</h3>
-                        </div>
-                        <div className="flex flex-col gap-2 md:items-end mt-4 md:mt-0 max-w-md">
-                            <span className="text-cyan-400 font-mono text-sm border border-cyan-500/30 px-2 py-1 rounded inline-block w-fit">
-                                {item.year}
-                            </span>
-                            <p className="text-gray-400 text-sm md:text-right leading-relaxed">
-                                {item.details}
-                            </p>
-                        </div>
-                    </motion.div>
+                        {tab.label}
+                        {activeTab === tab.id && (
+                            <motion.div
+                                layoutId="activeTab"
+                                className="absolute inset-0 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-full -z-10"
+                                transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                            />
+                        )}
+                    </button>
                 ))}
+            </div>
+
+            {/* List Format: 
+                position 
+                company           year          details 
+            */}
+            <div className="w-full max-w-5xl flex flex-col gap-6">
+                <AnimatePresence mode="wait">
+                    <motion.div
+                        key={activeTab}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.3 }}
+                        className="flex flex-col gap-6"
+                    >
+                        {ExperienceData[activeTab].map((item, index) => (
+                            <div key={index} className="w-full">
+                                {/* Row 1: Position */}
+                                <div className="mb-2">
+                                    <h2 className="text-2xl font-bold text-white tracking-wide">
+                                        {item.position}
+                                    </h2>
+                                </div>
+
+                                {/* Row 2: Company, Year, Details */}
+                                <div className="grid grid-cols-1 md:grid-cols-12 items-start py-4 border-b border-[#7042f861] group hover:border-purple-500/50 transition-colors">
+                                    <div className="md:col-span-3">
+                                        <h3 className="text-lg text-purple-400 font-medium">
+                                            {item.company}
+                                        </h3>
+                                    </div>
+                                    <div className="md:col-span-3 mt-1 md:mt-0">
+                                        <span className="text-cyan-400 font-mono text-sm opacity-80">
+                                            {item.year}
+                                        </span>
+                                    </div>
+                                    <div className="md:col-span-6 mt-3 md:mt-0">
+                                        <p className="text-gray-400 text-sm leading-relaxed italic md:not-italic">
+                                            {item.details}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </motion.div>
+                </AnimatePresence>
             </div>
         </section>
     );
