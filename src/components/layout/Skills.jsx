@@ -1,11 +1,11 @@
 "use client"
 import React from "react";
-import { Skill_data } from "@/constants";
+import { Skill_data, currentStack_data } from "@/constants";
 import { Code, Database, Globe, Layers, Cpu } from "lucide-react";
 
 const Skills = () => {
     // Subset for Current Stack (first 5 for example)
-    const currentStack = Skill_data.slice(0, 5);
+    const currentStack = currentStack_data;
     // All skills for marquee
     const allSkills = Skill_data;
 
@@ -28,7 +28,7 @@ const Skills = () => {
                     </h1>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-[900px] w-full">
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-2 max-w-[900px] w-full">
                     {currentStack.map((skill, index) => (
                         <div key={index} className="flex flex-col items-center gap-3 p-4 bg-[#0300145e] border border-[#7042f861] rounded-xl hover:scale-105 transition duration-300">
                             {/* Placeholder for Image if not available */}

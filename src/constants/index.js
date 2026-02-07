@@ -62,6 +62,12 @@ export const Skill_data = [
     width: 80,
     height: 80,
   },
+   {
+    skill_name: "LeetCode",
+    Image: "/skills_image/LeetCode.png",
+    width: 80,
+    height: 80,
+  },
   {
     skill_name: "C#",
     Image: "/skills_image/C#.png",
@@ -83,6 +89,18 @@ export const Skill_data = [
   {
     skill_name: "Typescript",
     Image: "/skills_image/typescript.png",
+    width: 80,
+    height: 80,
+  },
+   {
+    skill_name: "PHP",
+    Image: "/skills_image/PHP_1.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Microsoft_IIS",
+    Image: "/skills_image/microsoft_IIS.png",
     width: 80,
     height: 80,
   },
@@ -253,7 +271,12 @@ export const currentStack_data  =[
     width: 80,
     height: 80,
   },
-  
+  {
+    skill_name: "LeetCode",
+    Image: "/skills_image/LeetCode.png",
+    width: 80,
+    height: 80,
+  },
   {
     skill_name: "Html 5",
     Image: "/skills_image/HTML5_1.png",
@@ -274,7 +297,7 @@ export const currentStack_data  =[
   },
   {
     skill_name: "Git",
-    Image: "/skills_image/Git.png",
+    Image: "/skills_image/Git_1.png",
     width: 80,
     height: 80,
   },
@@ -293,13 +316,13 @@ export const currentStack_data  =[
 
   {
     skill_name: "Framer Motion",
-    Image: "/skills_image/Framer_Motion.png",
+    Image: "/skills_image/framerMotion.svg",
     width: 80,
     height: 80,
   },
   {
     skill_name: "Swagger",
-    Image: "/skills_image/swagger_1.png",
+    Image: "/skills_image/swagger.png",
     width: 80,
     height: 80,
   },
@@ -346,10 +369,11 @@ export const currentStack_data  =[
     width: 80,
     height: 80,
   },
+  
 
   
 ];
- const Certification_data = [
+ export const Certification_data = [
     {
         name:"CISCO CyberOps Associate",
         Image:"/certification/CyberOpsAssoc.png",
