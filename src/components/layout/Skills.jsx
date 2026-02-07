@@ -28,9 +28,9 @@ const Skills = () => {
                     </h1>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-5 gap-2 max-w-[900px] w-full">
+                <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-2 max-w-[900px] xl:max-w-[1200px] 2xl:max-w-[1440px] w-full">
                     {currentStack.map((skill, index) => (
-                        <div key={index} className="flex flex-col items-center gap-3 p-4 bg-[#0300145e] border border-[#7042f861] rounded-xl hover:scale-105 transition duration-300">
+                        <div key={index} className="flex flex-col items-center gap-3 p-4 bg-[#0300145e] border border-[#7042f861] rounded-xl hover:scale-105 hover:border-gradient from-[#7042f861] to-[#b2f10261] hover:rotate-360 hover:continuous-rotate transition duration-300">
                             {/* Placeholder for Image if not available */}
                             <div className="w-[60px] h-[60px] flex items-center justify-center bg-white/5 rounded-full text-2xl">
                                 {skill.Image ? (
