@@ -5,8 +5,6 @@
   --foreground: #ffffff;
 }
 
-
-
 body {
   background: var(--background);
   color: var(--foreground);
@@ -14,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar - Kept as is */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -33,27 +31,32 @@ body {
 }
 
 @theme {
-  --animate-marquee: marquee 25s linear infinite;
-  --animate-marquee2: marquee2 25s linear infinite;
+  /* Changed duration from 40s to 100s for slower scroll */
+  --animate-marquee: marquee 50s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 50s linear infinite;
   --animate-gradient-x: gradient-x 3s ease infinite;
   --font-nico-moji: var(--font-nico-moji);
 
+  /* Marquee: Moves Left. 
+     Starts at 0, ends at -50% (half the width of the 2 duplicated sets) */
   @keyframes marquee {
-    0% {
+    from {
       transform: translateX(0%);
     }
 
-    100% {
-      transform: translateX(-100%);
+    to {
+      transform: translateX(-50%);
     }
   }
 
-  @keyframes marquee2 {
-    0% {
-      transform: translateX(100%);
+  /* Marquee Reverse: Moves Right. 
+     Starts at -50% (halfway), moves back to 0 */
+  @keyframes marquee-reverse {
+    from {
+      transform: translateX(-50%);
     }
 
-    100% {
+    to {
       transform: translateX(0%);
     }
   }
@@ -73,7 +76,13 @@ body {
   }
 }
 
-/* Gradient animation for text - outside @theme for compatibility */
+/* Pause animation on hover */
+.group:hover .animate-marquee,
+.group:hover .animate-marquee-reverse {
+  animation-play-state: paused;
+}
+
+/* Gradient animation for text */
 @keyframes gradient-shift {
 
   0%,
