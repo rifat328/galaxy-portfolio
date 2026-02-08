@@ -12,7 +12,7 @@ const ProjectsData = [
         description: "Scalable backend with role-based access, JWT auth, and DDoS protection using Arkjet. Includes a Next.js frontend dashboard.",
         tools: ["Node.js", "Express", "MongoDB", "Next.js", "Tailwind CSS", "Arkjet"],
         link: "https://github.com/rifat328/parcel-currier-service",
-        src: "/project1.png",
+        src: "/Project%20preview/pcs%20project.png",
     },
     {
         title: "ChefsKit AI",
@@ -20,7 +20,7 @@ const ProjectsData = [
         description: "AI-powered recipe generator using Mistral model. Optimizes data fetching with exponential debouncing for cost-efficiency.",
         tools: ["React", "Mistral AI", "Tailwind CSS", "JavaScript"],
         link: "https://github.com/rifat328/ChefsKit",
-        src: "/project2.png",
+        src: "/Project%20preview/chefskit_project.jpg",
     },
     {
         title: "Stream Anomaly Detection",
@@ -28,7 +28,7 @@ const ProjectsData = [
         description: "Real-time anomaly detection in data streams using Z-score algorithms with live visualization of outliers.",
         tools: ["Python", "Matplotlib", "Pandas", "NumPy"],
         link: "https://github.com/rifat328/Anomaly-Detection-on-Streamed-Data",
-        src: "/project3.png",
+        src: "/Project%20preview/Stream%20Anomaly%20Detection.webp",
     },
     {
         title: "Subscription Tracker",
@@ -36,7 +36,7 @@ const ProjectsData = [
         description: "Service to track user subscriptions and send email notifications before expiration to help save money.",
         tools: ["Node.js", "Nodemailer", "Cron Jobs", "MongoDB"],
         link: "https://github.com/rifat328/subscription-service",
-        src: "/project1.png", // Reuse placeholder
+        src: "/Project%20preview/subscription%20tracker.png", // Reuse placeholder
     },
     {
         title: "Disease Detection ML",
@@ -44,7 +44,7 @@ const ProjectsData = [
         description: "Multi-disease prediction system for diabetes, stroke, and hypertension using advanced machine learning models.",
         tools: ["Python", "Scikit-Learn", "Jupyter", "Pandas"],
         link: "https://shorturl.at/eRsLF",
-        src: "/project2.png", // Reuse placeholder
+        src: "/Project%20preview/disease%20detection.png", // Reuse placeholder
     },
     {
         title: "Nickelfox E-Commerce",
@@ -52,7 +52,7 @@ const ProjectsData = [
         description: "Modern, responsive e-commerce interface built with React and Vite, focusing on clean design and component reusability.",
         tools: ["React", "Vite", "CSS Modules", "Responsive Design"],
         link: "https://github.com/rifat328/nickelfox.com",
-        src: "/project3.png", // Reuse placeholder
+        src: "/Project%20preview/nicklefox.jpg", // Reuse placeholder
     },
 ];
 
@@ -77,7 +77,7 @@ const Projects = () => {
 
                 {/* Title Overlay */}
                 <div className="absolute top-24 left-10 md:left-20 z-10 w-full">
-                    <h1 className="text-[40px] md:text-[60px] font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500">
+                    <h1 className="text-[40px] md:text-[60px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                         Projects
                     </h1>
                 </div>
@@ -104,7 +104,7 @@ const Projects = () => {
                             rel="noopener noreferrer"
                             className="flex items-center gap-4 group cursor-pointer"
                         >
-                            <span className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500 transition-all duration-300 group-hover:scale-105">
+                            <span className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 transition-all duration-300 group-hover:scale-105">
                                 View More on GitHub
                             </span>
                             <ArrowRight className="text-cyan-500 w-10 h-10 group-hover:translate-x-2 transition-transform duration-300" />

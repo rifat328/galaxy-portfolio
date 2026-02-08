@@ -13,10 +13,17 @@ const ProjectCard = ({ src, title, description, link, number, category, tools, i
                 {/* Media Section */}
                 <div className="w-full h-1/2 overflow-hidden rounded-xl relative">
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition duration-500 z-10" />
-                    {/* Placeholder if no src */}
-                    <div className="w-full h-full bg-linear-to-br from-purple-900/50 to-black flex items-center justify-center">
-                        <span className="text-4xl">🚀</span>
-                    </div>
+                    {src ? (
+                        <img
+                            src={src}
+                            alt={title}
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                    ) : (
+                        <div className="w-full h-full bg-linear-to-br from-purple-900/50 to-black flex items-center justify-center">
+                            <span className="text-4xl">🚀</span>
+                        </div>
+                    )}
                 </div>
 
                 {/* Content Section */}
