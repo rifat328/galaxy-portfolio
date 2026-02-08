@@ -14,10 +14,10 @@ const ExperienceData = {
     ],
     business: [
         {
-            position: "Business Development Lead",
-            company: "Tech Startups Inc.",
-            year: "Jan 2024 - Present",
-            details: "Managing client relations and identifying new market opportunities in the SaaS sector."
+            position: "Store Manager",
+            company: "Kakon Pharma and Departmental Store",
+            year: "2023 - OCT 2024",
+            details: "Managed daily store operations, including inventory management, customer service, and sales. Oversaw staff scheduling and training to ensure high standards of service delivery."
         }
     ]
 };
@@ -32,7 +32,7 @@ const Experience = () => {
 
     return (
         <section id="experience" className="flex flex-col items-center justify-center gap-5 h-full relative overflow-hidden pb-20 py-20 z-20 px-5">
-            <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4 text-center">
+            <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500 py-4 text-center">
                 My Experience
             </h1>
 
@@ -49,7 +49,7 @@ const Experience = () => {
                         {activeTab === tab.id && (
                             <motion.div
                                 layoutId="activeTab"
-                                className="absolute inset-0 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-full -z-10"
+                                className="absolute inset-0 bg-linear-to-r from-purple-600 to-cyan-600 rounded-full -z-10"
                                 transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                             />
                         )}

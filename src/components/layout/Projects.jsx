@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import ProjectCard from "@/components/sub/ProjectCard";
 import { motion, useTransform, useScroll } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 const ProjectsData = [
     {
@@ -77,11 +78,11 @@ const Projects = () => {
                 {/* Title Overlay */}
                 <div className="absolute top-24 left-10 md:left-20 z-10 w-full">
                     <h1 className="text-[40px] md:text-[60px] font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500">
-                        Selected Works
+                        Projects
                     </h1>
                 </div>
 
-                <motion.div style={{ x }} className="flex gap-10 pl-[5vw]">
+                <motion.div style={{ x }} className="flex  pl-[5vw]">
                     {ProjectsData.map((project, index) => (
                         <ProjectCard
                             key={index}
@@ -96,8 +97,18 @@ const Projects = () => {
                         />
                     ))}
                     {/* Extra padding or call to action card at the end */}
-                    <div className="min-w-[20vw] flex items-center justify-center">
-                        <span className="text-gray-500 text-xl">View More on GitHub &rarr;</span>
+                    <div className="min-w-[50vw] flex items-center justify-start">
+                        <a
+                            href="https://github.com/rifat328"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-4 group cursor-pointer"
+                        >
+                            <span className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500 transition-all duration-300 group-hover:scale-105">
+                                View More on GitHub
+                            </span>
+                            <ArrowRight className="text-cyan-500 w-10 h-10 group-hover:translate-x-2 transition-transform duration-300" />
+                        </a>
                     </div>
                 </motion.div>
             </div>

@@ -7,8 +7,8 @@ const ProjectCard = ({ src, title, description, link, number, category, tools, i
     const isEven = index % 2 === 0;
 
     return (
-        <div className="min-w-[80vw] md:min-w-[60vw] lg:min-w-[50vw] h-[70vh] flex flex-col justify-center p-4 snap-center">
-            <div className={`w-full h-full border border-[#7042f861] bg-[#0300145e] rounded-3xl overflow-hidden flex flex-col ${isEven ? 'md:flex-col' : 'md:flex-col-reverse'} p-6 gap-6 relative group transition-all duration-500 hover:border-[#7042f8]`}>
+        <div className="min-w-[80vw] md:min-w-[30vw] lg:min-w-[30vw] h-[70vh] flex flex-col justify-center p-4 pr-0 snap-center">
+            <div className={`w-full h-full border-r border-b border-[#7042f861] bg-[#0300145e] rounded-3xl overflow-hidden flex flex-col ${isEven ? 'md:flex-col' : 'md:flex-col-reverse'} p-6 gap-6 relative group transition-all duration-500 hover:border-[#7042f8]`}>
 
                 {/* Media Section */}
                 <div className="w-full h-1/2 overflow-hidden rounded-xl relative">
@@ -23,9 +23,9 @@ const ProjectCard = ({ src, title, description, link, number, category, tools, i
                 <div className="w-full h-1/2 flex flex-col justify-between z-20">
                     <div className="flex flex-col gap-2">
                         <div className="flex justify-between items-start">
-                            <div className="text-6xl font-black text-white/5 font-orbitron">{number}</div>
+                            <div className="text-6xl font-black font-orbitron bg-linear-to-br from-white via-gray-300 to-gray-600 bg-clip-text text-transparent shadow-gray-500/50 drop-shadow-sm">{number}</div>
                             <div className="flex flex-col items-end">
-                                <h3 className="text-2xl md:text-3xl font-bold text-white uppercase tracking-wider">{title}</h3>
+                                <h3 className="text-2xl md:text-3xl font-bold bg-linear-to-br from-white via-gray-300 to-gray-600 bg-clip-text text-transparent shadow-gray-500/50 drop-shadow-sm uppercase tracking-wider">{title}</h3>
                                 <span className="text-cyan-400 text-sm font-mono tracking-widest">{category}</span>
                             </div>
                         </div>

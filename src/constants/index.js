@@ -70,13 +70,13 @@ export const Skill_data = [
   },
   {
     skill_name: "C#",
-    Image: "/skills_image/C#.png",
+    Image: "/skills_image/C_sharp.png",
     width: 80,
     height: 80,
   },
   {
     skill_name: "ASP.NET Core",
-    Image: "/skills_image/ASP.NET_Core.png",
+    Image: "/skills_image/ASP.NET_CORE.png",
     width: 80,
     height: 80,
   },
@@ -106,7 +106,7 @@ export const Skill_data = [
   },
   {
     skill_name: "Framer Motion",
-    Image: "/skills_image/Framer_Motion.png",
+    Image: "/skills_image/framerMotion.svg",
     width: 80,
     height: 80,
   },
@@ -118,13 +118,13 @@ export const Skill_data = [
   },
   {
     skill_name: "AWS",
-    Image: "/skills_image/AWS.png",
+    Image: "/skills_image/AWS_1.png",
     width: 80,
     height: 80,
   },
   {
     skill_name: "Git",
-    Image: "/skills_image/Git.png",
+    Image: "/skills_image/Git_1.png",
     width: 80,
     height: 80,
   },
@@ -148,7 +148,7 @@ export const Skill_data = [
   },
   {
     skill_name: "Swagger",
-    Image: "/skills_image/swagger_1.png",
+    Image: "/skills_image/swagger.png",
     width: 80,
     height: 80,
   },
