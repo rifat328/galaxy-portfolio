@@ -10,7 +10,7 @@ const ProjectsData = [
         title: "PCS - Parcel Courier",
         category: "Full Stack / Security",
         description: "Scalable backend with role-based access, JWT auth, and DDoS protection using Arkjet. Includes a Next.js frontend dashboard.",
-        tools: ["Node.js", "Express", "MongoDB", "Next.js", "Arkjet"],
+        tools: ["Node.js", "Express", "MongoDB", "Next.js", "Tailwind CSS", "Arkjet"],
         link: "https://github.com/rifat328/parcel-currier-service",
         src: "/project1.png",
     },
@@ -97,7 +97,7 @@ const Projects = () => {
                         />
                     ))}
                     {/* Extra padding or call to action card at the end */}
-                    <div className="min-w-[50vw] flex items-center justify-start">
+                    <div className="min-w-[20vw] flex items-center justify-center pl-10">
                         <a
                             href="https://github.com/rifat328"
                             target="_blank"
