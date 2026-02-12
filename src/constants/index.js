@@ -8,7 +8,7 @@ export const Skill_data = [
   {
   
     skill_name: "MongoDB",
-    Image: "/skills_image/MongoDB_2.png",
+    Image: "/skills_image/MongoDb_2.png",
     width: 80,
     height: 80,
   },
@@ -237,7 +237,7 @@ export const currentStack_data  =[
   {
   
     skill_name: "MongoDB",
-    Image: "/skills_image/MongoDB_2.png",
+    Image: "/skills_image/MongoDb_2.png",
     width: 80,
     height: 80,
   },
