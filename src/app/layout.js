@@ -3,6 +3,7 @@ import StarsCanvas from "@/components/canvas/StarBackground";
 import Navbar from "@/components/layout/Navbar";
 import SmoothScroll from "@/components/sub/SmoothScroll";
 import localFont from "next/font/local";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   title: "3D Galaxy Portfolio",
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`bg-[#030014] overflow-y-scroll overflow-x-hidden ${nicoMoji.variable}`}>
+        <SpeedInsights />
         <SmoothScroll />
         <StarsCanvas />
         <Navbar />
