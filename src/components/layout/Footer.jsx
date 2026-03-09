@@ -37,13 +37,13 @@ const Footer = () => {
                 <div className="flex flex-col items-center md:items-start gap-4">
                     <div className="font-bold text-[16px] text-white">Contact</div>
                     <div className="flex flex-col gap-3">
-                        <a href="mailto:contact@rifat.dev" className="flex flex-row items-center gap-3 cursor-pointer group">
+                        <a href="mailto:rifathossain328663@gmail.com" className="flex flex-row items-center gap-3 cursor-pointer group">
                             <Mail className="text-slate-400 group-hover:text-rose-400 transition" size={18} />
-                            <span className="text-[15px] text-slate-300 group-hover:text-white transition">contact@rifat.dev</span>
+                            <span className="text-[15px] text-slate-300 group-hover:text-white transition">rifathossain328663@gmail.com</span>
                         </a>
-                        <a href="tel:+880123456789" className="flex flex-row items-center gap-3 cursor-pointer group">
+                        <a href="tel:+8801730941406" className="flex flex-row items-center gap-3 cursor-pointer group">
                             <Phone className="text-slate-400 group-hover:text-rose-400 transition" size={18} />
-                            <span className="text-[15px] text-slate-300 group-hover:text-white transition">+880 123 456 789</span>
+                            <span className="text-[15px] text-slate-300 group-hover:text-white transition">+880 1730941406</span>
                         </a>
                     </div>
                 </div>
